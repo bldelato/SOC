@@ -134,7 +134,7 @@ default_nodes = [
 format_edges = []
 format_edges.append("Source;Target;Type;Cookie;Secure\n")
 
-# Las 3 tps con mas frado de salida
+# Las 3 tps con mas grado de salida
 top3OutDegree = ['doubleclick.net', 'google-analytics.com', 'mathtag.com']
 
 # Cargamos el archivo json en el diccionario data
@@ -150,6 +150,6 @@ firstPartyRelations()
 
 findNodesWhitTarget(top3OutDegree)
 
-for node in default_nodes:
-	generateSource(node)
-	generateTarget(node)
+#for node in default_nodes:
+#	generateSource(node)
+#	generateTarget(node)
